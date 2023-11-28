@@ -4,9 +4,17 @@ func main(){
 	// bits and memories
 	var numOne int8
     var name1 string
+	//arrays
     var ages[3]int=[3]int{12,14,16}
 	var ages1=[3]int{22,14,26}
 	unames:=[3]string{"mac","paul","max" }
+	//slices (use arrays hood)
+	var Names=[]int{10,20,30}
+	fmt.Println(Names,len(Names))
+	// append a slice
+	Names=append(Names, 89)
+	fmt.Println(Names,len(Names))
+	//input output
 	fmt.Println(ages,len(ages))
 	fmt.Println(ages1,len(ages1))
 	fmt.Println(unames,len(unames))
