@@ -5,7 +5,11 @@ func main(){
 	var numOne int8
     var name1 string
     var ages[3]int=[3]int{12,14,16}
+	var ages1=[3]int{22,14,26}
+	unames:=[3]string{"mac","paul","max" }
 	fmt.Println(ages,len(ages))
+	fmt.Println(ages1,len(ages1))
+	fmt.Println(unames,len(unames))
 	fmt.Println("enter your age")
 	fmt.Scanln(&numOne)
 	fmt.Println("enter your name")
