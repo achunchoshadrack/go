@@ -1,6 +1,8 @@
 package main
 import ("fmt"
-"strings")
+"strings"
+"sort"
+)
 func main(){
 	// bits and memories
 	var numOne int8
@@ -27,6 +29,31 @@ func main(){
 	greetings:="Hello dear Golang"
 	fmt.Println(strings.Contains(greetings, "Golang"))
 	fmt.Println(strings.Contains(greetings, "shadrack"))
+	//replacing a word with another word using the strings std lib
+	fmt.Println(strings.ReplaceAll(greetings, "dear", "all"))
+	//to Upper case a String
+	fmt.Println(strings.ToUpper(greetings))
+	// getting the position of a string
+    fmt.Println(strings.Index(greetings, "an"))
+	
+    //sort parkage
+	//sorting an array or slice in accending order
+    heights:=[]int{2,3,1,5,0,10}
+	sort.Ints(heights)
+	sort.Ints(Names)
+	fmt.Println(Names)
+	fmt.Println(heights)
+	// searching for an index of the member of an array or a slice
+	index:=sort.SearchInts(heights, 5)
+	fmt.Println(index)
+
+    //sorting an array or slice in accending order of a string
+	boys:=[]string{"john","Paul", "Ambe","Zeno","Bless","Che"}
+	sort.Strings(boys)
+	fmt.Println(boys)
+	//Seraching for a string on a slice or an array
+	fmt.Println(sort.SearchStrings(boys, "Che"))
+    
 	//input output
 	fmt.Println(ages,len(ages))
 	fmt.Println(ages1,len(ages1))
