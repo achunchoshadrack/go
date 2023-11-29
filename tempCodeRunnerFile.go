@@ -1,0 +1,2 @@
+greetings("Mac")
+    // goodby("Mac")
