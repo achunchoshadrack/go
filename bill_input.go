@@ -12,6 +12,7 @@ func NewBill(name string)bill{
 		name: name,
 		items: map[string]float64{},
 		tips: 0,
+		
 	}
 	return b
 }
