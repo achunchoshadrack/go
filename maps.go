@@ -4,6 +4,7 @@ import ("fmt"
 )
 func main(){
 	// maps takes keys and assign values
+	// in a map the values must be of the same type and the keys of the same type
 	menu:=map [string]float64{
 		"Rice": 500,
 		"Chicken": 1000,
@@ -26,4 +27,7 @@ func main(){
 	for k, v:=range phonebook{
 		fmt.Println(k,":  ", v)
 	}
+	//updating a map
+	phonebook[687654390]="ACHUNCHO"
+	fmt.Println(phonebook)
 }
